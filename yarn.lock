@@ -132,7 +132,12 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.19.11.tgz#a5d300008960bb39677c46bf16f53ec70d8dee04"
   integrity sha512-vfkhltrjCAb603XaFhqhAF4LGDi2M4OrCRrFusyQ+iTLQ/o60QQXxc9cZC/FFpihBI9N1Grn6SMKVJ4KP7Fuiw==
 
-"@langchain/community@~0.0.17":
+"@google/generative-ai@^0.1.0":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@google/generative-ai/-/generative-ai-0.1.3.tgz#8e529d4d86c85b64d297b4abf1a653d613a09a9f"
+  integrity sha512-Cm4uJX1sKarpm1mje/MiOIinM7zdUUrQp/5/qGPAgznbdd/B9zup5ehT6c1qGqycFcSopTA1J1HpqHS5kJR8hQ==
+
+"@langchain/community@^0.0.17", "@langchain/community@~0.0.17":
   version "0.0.17"
   resolved "https://registry.yarnpkg.com/@langchain/community/-/community-0.0.17.tgz#a66c45bdd9e7699e0591720a62d4caaf559f4834"
   integrity sha512-BI7WJv3rtIbmKrvUNeTaxGGrz8jnu4boLnpl+4cH3WE2lrKTdzuvp6Ot4dACowWInvNSfXcdMzG3BrtTMSaDcQ==
@@ -144,7 +149,7 @@
     uuid "^9.0.0"
     zod "^3.22.3"
 
-"@langchain/core@~0.1.13", "@langchain/core@~0.1.9":
+"@langchain/core@^0.1.13", "@langchain/core@~0.1.13", "@langchain/core@~0.1.5", "@langchain/core@~0.1.9":
   version "0.1.13"
   resolved "https://registry.yarnpkg.com/@langchain/core/-/core-0.1.13.tgz#e36635074127a461724dd96a1f3db90e753b5579"
   integrity sha512-+TiOmDeBovSKorF9L0BwfxC5xVn3jfyKssL0WXoNziKqs6SJq28vMc4l3QfGRkJtE97iv2YI7EKbqRoqoR8mIA==
@@ -160,6 +165,14 @@
     uuid "^9.0.0"
     zod "^3.22.3"
     zod-to-json-schema "3.20.3"
+
+"@langchain/google-genai@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@langchain/google-genai/-/google-genai-0.0.7.tgz#10c3416c7ce62836389bf189e6936f4ae7f4cb47"
+  integrity sha512-0VUrzVRS5PW/HhGVdTelDZd8DJVXdyLj2KqHpUNWdXNNMKaLVV6AY2nwqKLA3I4SV0VfOt1/XoZAgPIpQfn4Ow==
+  dependencies:
+    "@google/generative-ai" "^0.1.0"
+    "@langchain/core" "~0.1.5"
 
 "@langchain/openai@^0.0.12", "@langchain/openai@~0.0.10", "@langchain/openai@~0.0.12":
   version "0.0.12"
@@ -241,6 +254,13 @@
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.5.tgz#a6ce3e556e00fd9895dd872dd172ad0d4bd687f4"
   integrity sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==
+
+"@types/marked@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-6.0.0.tgz#4dbc7df4add578ef87eb6ca2c6927c97b0531abf"
+  integrity sha512-jmjpa4BwUsmhxcfsgUit/7A9KbrC48Q0q8KvnY107ogcjGgTFDlIL3RpihNpx2Mu1hM4mdFQjoVc4O6JoGKHsA==
+  dependencies:
+    marked "*"
 
 "@types/node-fetch@^2.6.4":
   version "2.6.10"
@@ -519,6 +539,11 @@ langsmith@~0.0.48:
     p-queue "^6.6.2"
     p-retry "4"
     uuid "^9.0.0"
+
+marked@*, marked@^11.1.1:
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-11.1.1.tgz#e1b2407241f744fb1935fac224680874d9aff7a3"
+  integrity sha512-EgxRjgK9axsQuUa/oKMx5DEY8oXpKJfk61rT5iY3aRlgU6QJtUcxU5OAymdhCvWvhYcd9FKmO5eQoX8m9VGJXg==
 
 md5@^2.3.0:
   version "2.3.0"
